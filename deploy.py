@@ -7,12 +7,12 @@ if r == "f":
     url = "https://raw.githubusercontent.com/yazidears/persoployer/"
     print("Getting data-file.uwu")
     file = url + "data-file.uwu"
-    resonse = requests.get(file)
+    response = requests.get(file)
     if response.status_code == 200:
         print("Download finished")
         text_file = response.text
     else:
         print("An error ocurred. Launching undeployer now.")
         os.system("python3 undeploy_urg.py")
-        
+
 
